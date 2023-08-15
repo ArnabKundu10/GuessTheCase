@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Correct Option</title>
+    <link rel="stylesheet" href="styleProject.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info bg-opacity-25 z-n1" onscroll="headfix(this)">
+    <div id="headid" class="heading mb-4" style="text-align: center">
+      Guess The Case
+    </div>
+    <div class="firstimage findElement mt-8">
+      <div class="oneElement" data-custom-attribute="valkey">
+        <img style="width: 80%" src="imgAsset/locked.jpg" alt="" />
+      </div>
+
+      <p>Select the correct option to open the lock</p>
+      <div class="correct text-success text-opacity-125">
+        YIPEEE! CORRECT ANSWER
+      </div>
+      <div class="wrong text-danger text-opacity-200">WRONG ANSWER!</div>
+      <ul
+        style="list-style: none; padding-left: 0 !important"
+        class="d-flex flex-row justify-content-between"
+      >
+        <li onclick="passwordclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valpassword"
+            src="imgAsset/password.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="keyclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valkey"
+            src="imgAsset/Key.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="hammerclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valhammer"
+            src="imgAsset/hammer.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="screwclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valscrew"
+            src="imgAsset/screwdriver.jpg"
+            alt=""
+          />
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+
+    <div class="firstimage findElement mt-8">
+      <div class="oneElement" data-custom-attribute="valhammer">
+        <img style="width: 80%" src="imgAsset/door.jpg" alt="" />
+      </div>
+
+      <p>Select the correct option to open the lock</p>
+      <div class="correct text-success text-opacity-125">
+        YIPEEE! CORRECT ANSWER
+      </div>
+      <div class="wrong text-danger text-opacity-200">WRONG ANSWER!</div>
+      <ul
+        style="list-style: none; padding-left: 0 !important"
+        class="d-flex flex-row justify-content-between"
+      >
+        <li onclick="passwordclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valpassword"
+            src="imgAsset/password.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="keyclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valkey"
+            src="imgAsset/Key.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="hammerclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valhammer"
+            src="imgAsset/dayaDoor.jpg"
+            alt=""
+          />
+        </li>
+        <li onclick="screwclk(this)">
+          <img
+            style="width: 100%"
+            data-custom-attribute="valscrew"
+            src="imgAsset/screwdriver.jpg"
+            alt=""
+          />
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+    <script src="jsProject.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
